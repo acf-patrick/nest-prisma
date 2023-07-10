@@ -27,6 +27,13 @@ async function main() {
     },
   });
 
+  await prisma.article.create({
+    data: {
+      title: 'Title',
+      body: 'body',
+    },
+  });
+
   console.log({ post1, post2 });
 }
 
